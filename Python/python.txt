@@ -1,0 +1,22 @@
+*args = is used when we dont know the exact no of arguments a function requires
+
+def add(*numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+
+print(add(2,3))
+print(add(2,3,5))
+print(add(2,3,5,7))
+print(add(2,3,5,7,9))
+
+**kwargs = is used when we dont know the exact no of keyword arguments a function requires
+
+def total_fruits(**kwargs):
+    print(kwargs, type(kwargs))
+
+total_fruits(banana = 5, mango = 7, apple = 8)
+
+Output:
+{'banana' : 5, 'mango' : 7, 'apple' : 8}  <class 'dict'>
