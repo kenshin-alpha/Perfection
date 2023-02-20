@@ -37,3 +37,13 @@ def howsum(targetSum,numbers,memo={}):
 
 print(howsum(7,[2,3,4]))
 print(howsum(8,[9,8,12]))
+def duplicate(nums):
+    di = {}
+    for i in nums:
+
+        if(i in di.keys()):
+            return "true"
+        di[i] = 1
+    return "false"
+
+print(duplicate([1,2,3,4,2]))
