@@ -29,3 +29,11 @@ print(li)
 
 
 print(1^1)
+def howsum(targetSum,numbers,memo={}):
+    for num in numbers:
+        memo[num] = targetSum
+    return memo
+
+
+print(howsum(7,[2,3,4]))
+print(howsum(8,[9,8,12]))

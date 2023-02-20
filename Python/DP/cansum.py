@@ -1,4 +1,6 @@
-def cansum(target, data,memo= {}):
+def cansum(target, data,memo= None):
+    if memo == None:
+        memo = {}
     if target in memo:
         return memo[target]
     if target == 0:
@@ -17,6 +19,6 @@ def cansum(target, data,memo= {}):
 
 print(cansum(12,[2,3,2,5,6]))
 
-print(cansum(23,[5,7]))
+print(cansum(23,[5,10]))
 
 
