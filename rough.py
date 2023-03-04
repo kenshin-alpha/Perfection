@@ -101,4 +101,5 @@ def matrixReshape( mat, r: int, c: int):
 print(matrixReshape([[1,2],[3,4]], 2,4))
 
 st = "shld"
-st
+st.capitalize()
+print(st)
