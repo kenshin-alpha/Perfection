@@ -11,9 +11,14 @@ class LinkedList:
         self.length = 1
 
     def get(self,index):
-        for i in self.length - 1:
-            self.tail = self.tail.next
-        return self.tail.value
-    
+        temp = self.head
+        for i in range(index):
+            temp = temp.next
+        return temp.value
+
+
+linkedList = LinkedList(5)
+print(linkedList.head.value)
+print(linkedList.get(0))
     
         
