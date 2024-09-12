@@ -16,12 +16,10 @@ class LinkedList:
             self.head = newNode
             self.tail = self.head
         else:
-            temp = self.head
-            while(temp.next):
-                temp = temp.next
-            temp.next = newNode
-            temp = newNode
-
+            self.tail.next = newNode
+            self.tail = newNode
+        self.length += 1
+        
     def printList(self):
         temp = self.head
         while(temp.next):
