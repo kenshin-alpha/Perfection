@@ -12,3 +12,4 @@ for i in range(m+n-1):
         k = i - j
         print(a[j][k],end=" ")
     print()
+
