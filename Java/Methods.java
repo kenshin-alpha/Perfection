@@ -1,6 +1,3 @@
-
-
-
 import java.lang.reflect.Method;
 public class Methods {
    public static void main(String[] argv) throws Exception {
